@@ -55,10 +55,44 @@ Created neighbor joining and max. parsimony trees using packages ape and phangor
 Reproducible script is in "Scripts" subdirectory.
 
 
+20250325
+
+Creating Maximum Likelihood tree with IQTree.
+Renamed .fasta files to use .fa suffix to reduce filename length.
+
+Install IQTree2 after activating conda environment
+
+1: ~ % conda install bioconda::iqtree
 
 
+Navagate to output subdirectory containing muscle-aligned .fasta file
+
+1: ~ % cd /home/jabels/JAbelsBot563/Final_Project/Output
+
+Run IQTree on data
+
+1: ~ % iqtree -s SalmincolaCOIAligned.fa -m MFP
+
+This produces a number of files, including a .iqtree file which contains the report of the best-fitting models. In the case of these data, HKY+F+G4 is the best-fitting model. The tree
+
+2: ~ % iqtree -s SalmincolaCOIAligned.fa -m HKY+F+G4 -redo
+
+This redoes the analyses with the most appropriate model. 
+
+From this point, the provided treefile can be used for vizualization and figure creation.
+
+IQTree Cheat Sheet
 
 
+Description: Creates trees using maximum likelihood (ML). Evaluates substitution models to determine best fit. Builds initial maximum parsimony tree and then uses bootstapping to randomly assess sites and build most likely tree. 
+
+Strengths: Accounts for missing data by reproting trees with identical likelihoods allowing users to know when more data must be gathered. Uses random pertubations to escape local optima. Scales easilyt with large datasets. 
+
+Weaknesses: Main weakness is in random pertubations which reduces reproducibility. Memory and computationally intensive.
+
+Assumptions: Assumes users will run software multiple times to limit the effect of randomness.
+
+Options: Can use NNI for improved treespace search. Can change number of initial trees. Can specificy evolutionary model based on either nucleic acid or protein samples.
 
 
 
