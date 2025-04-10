@@ -73,7 +73,7 @@ Run IQTree on data
 
 1: ~ % iqtree -s SalmincolaCOIAligned.fa -m MFP
 
-This produces a number of files, including a .iqtree file which contains the report of the best-fitting models. In the case of these data, HKY+F+G4 is the best-fitting model. The tree
+This produces a number of files, including a .iqtree file which contains the report of the best-fitting models. In the case of these data, HKY+F+G4 is the best-fitting model.
 
 2: ~ % iqtree -s SalmincolaCOIAligned.fa -m HKY+F+G4 -redo
 
@@ -93,6 +93,58 @@ Weaknesses: Main weakness is in random pertubations which reduces reproducibilit
 Assumptions: Assumes users will run software multiple times to limit the effect of randomness.
 
 Options: Can use NNI for improved treespace search. Can change number of initial trees. Can specificy evolutionary model based on either nucleic acid or protein samples.
+
+20250410
+
+Ran MrBayes on data on Windows
+
+Downloaded MrBayes .exe from GitHub
+
+Converted aligned .fasta files to .nexus using online tool: http://phylogeny.lirmm.fr/phylo_cgi/data_converter.cgi
+
+Running MrBayes
+
+1: MrBayes > exe SalmincolaCOIAligned.nexus
+
+Puts data into MrBayes.
+
+2: MrBayes > lset nst=2 rates=gamma
+
+Sets substituion mode, choices informed by IQTree results above.
+
+Kept priors at default.
+
+3: MrBayes > mcmcp ngen=20000
+
+Set initial number of generations to 20000.
+
+4: MrBayes > mcmcp diagnfreq=2000
+
+Lowered freqeuncy of diagnostics to 2000 to account for smaller dataset.
+
+5: MrBayes > mcmc
+
+Ran the analyses. Total generations was 400000 and average standard deviation was lowered to ~0.14.
+
+6: MrBayes > sumt
+
+Visualized summary statistics and trees.
+
+
+MrBayes Cheatsheet
+
+Description: MrBayes is a program for performing Bayeesian inference of phylogenies. MrBayes uses Markov Chain Monte Carlo methods to estimate the posterior distribution of model parameters. 
+
+Strenths: Can utlizize and combine multiple types of data including non-nucleotide data. Models increase the chance of escaping local optima in large datasets. 
+
+Assumptions: Assumes equal rates of evolution across sites without user input specifying this is not the case. Much depends on the chosen substitution model. Chosen priors can change outcomes significantly. 
+
+Weaknesses: Bootstrap support values for ML or Parsimony tend to be lower than posterior probabilities for Bayesian approaches using the same data.
+
+Options: Priors: topology, branch length, nucloetide substituion rates, stationary frequencies, proportion of invariable sites. Partitioning by data type. Set model tructure to link/unlink models across data subset.
+
+
+
 
 
 
