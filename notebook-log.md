@@ -135,13 +135,51 @@ MrBayes Cheatsheet
 
 Description: MrBayes is a program for performing Bayeesian inference of phylogenies. MrBayes uses Markov Chain Monte Carlo methods to estimate the posterior distribution of model parameters. 
 
-Strenths: Can utlizize and combine multiple types of data including non-nucleotide data. Models increase the chance of escaping local optima in large datasets. 
+Strengths: Can utlizize and combine multiple types of data including non-nucleotide data. Models increase the chance of escaping local optima in large datasets. 
 
 Assumptions: Assumes equal rates of evolution across sites without user input specifying this is not the case. Much depends on the chosen substitution model. Chosen priors can change outcomes significantly. 
 
 Weaknesses: Bootstrap support values for ML or Parsimony tend to be lower than posterior probabilities for Bayesian approaches using the same data.
 
 Options: Priors: topology, branch length, nucloetide substituion rates, stationary frequencies, proportion of invariable sites. Partitioning by data type. Set model tructure to link/unlink models across data subset.
+
+
+
+20250422
+
+Running Astral on example dataset, as my data is only a single gene. 
+
+Downloaded Astral for Windows from: https://github.com/smirarab/ASTRAL/tree/master
+
+Following Tutorial: https://github.com/smirarab/ASTRAL/blob/master/astral-tutorial.md#installation
+
+Running astral:
+
+1: Naviagate to directory with Astral .jar file
+
+cd  C:\Users\jerem\OneDrive\Desktop\Astral
+
+2: run Astral on mammals dataset
+
+java -jar astral.5.7.8.jar -i test_data/song_mammals.424.gene.tre -o test_data/song_mammals.tre
+
+3: Testing astral on a larger dataset
+
+java -jar astral.5.7.8.jar -i test_data/1KP-genetrees.tre -o test_data/1kp.tre 2> test_data/1kp.log
+
+Utlized FigTree to view the outputs
+
+Astral Cheatsheet
+
+Description: A method used to estimate species trees after inferring a set of gene trees.
+
+Strengths: Statiscally consistent, scaleable, high accuracy in simulated studies. 
+
+Assumptions: Presence of a gene for one species should be independent of the gene tree topology and presence of other genes. Assumption of locality: when calculating branch support, astral assumes that all four branches around it are correct. 
+
+Weaknesses: Cannot work with a single gene. Requires java.
+
+Options: Can run on either large or small datasets. Can be used with unresolved gene trees.
 
 
 
