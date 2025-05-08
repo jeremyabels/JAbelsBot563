@@ -1,0 +1,331 @@
+IQ-TREE 2.4.0 built Feb 12 2025
+
+Input file name: Salmincola_COI_CleanIDs_AlignedMuscle.fasta
+Type of analysis: tree reconstruction + ultrafast bootstrap (2000 replicates)
+Random seed number: 771911
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 54 sequences with 669 nucleotide sites
+Number of constant sites: 449 (= 67.1151% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 449 (= 67.1151% of all sites)
+Number of parsimony informative sites: 154
+Number of distinct site patterns: 186
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 12.2010
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 12.2010
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2836
+  pi(C) = 0.1569
+  pi(G) = 0.1831
+  pi(T) = 0.3765
+
+Rate matrix Q:
+
+  A   -0.8631   0.04893    0.6967    0.1174
+  C   0.08847    -1.579    0.0571     1.433
+  G     1.079   0.04893    -1.246    0.1174
+  T   0.08847     0.597    0.0571   -0.7426
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1637
+
+ Category  Relative_rate  Proportion
+  1         0.000115       0.25
+  2         0.01581        0.25
+  3         0.2828         0.25
+  4         3.701          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2681.4234 (s.e. 106.8960)
+Unconstrained log-likelihood (without tree): -2421.1878
+Number of free parameters (#branches + #model parameters): 92
+Akaike information criterion (AIC) score: 5546.8468
+Corrected Akaike information criterion (AICc) score: 5576.5551
+Bayesian information criterion (BIC) score: 5961.3789
+
+Total tree length (sum of branch lengths): 1.8172
+Sum of internal branch lengths: 0.5990 (32.9628% of tree length)
+
+WARNING: 13 near-zero internal branches (<0.0015) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Achtheres.pimelodi.NY.1' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++-----------------------------------------------------------Achtheres.pimelodi.NY.1
+|
+|                               +--S.cal.RU.8
+|                            +**| (36)
+|                            |  +--S.cal.RU.12
+|                         +--| (92)
+|                         |  |        +**S.cal.RU.14
+|                         |  |     +--| (100)
+|                         |  |     |  +**S.cal.RU.15
+|                         |  |  +**| (48)
+|                         |  |  |  |  +--S.cal.RU.9
+|                         |  |  |  +--| (85)
+|                         |  |  |     |  +**S.cal.OR.1
+|                         |  |  |     +--| (85)
+|                         |  |  |        |  +--S.cal.NY.1
+|                         |  |  |        +--| (87)
+|                         |  |  |           |           +--S.cal.NY.4
+|                         |  |  |           |        +**| (40)
+|                         |  |  |           |        |  +**S.cal.NY.3
+|                         |  |  |           |     +--| (78)
+|                         |  |  |           |     |  +**S.cal.NY.5
+|                         |  |  |           |  +**| (60)
+|                         |  |  |           |  |  +**S.cal.NY.2
+|                         |  |  |           +--| (95)
+|                         |  |  |              |  +**S.cal.NY.7
+|                         |  |  |              +**| (63)
+|                         |  |  |                 +**S.cal.NY.6
+|                         |  +--| (75)
+|                         |     |     +--S.cal.RU.10
+|                         |     |  +--| (91)
+|                         |     |  |  |  +--S.cal.RU.4
+|                         |     |  |  +--| (93)
+|                         |     |  |     +--S.cal.RU.5
+|                         |     +--| (57)
+|                         |        |     +--S.cal.RU.6
+|                         |        |  +--| (78)
+|                         |        |  |  |  +**S.cal.RU.1
+|                         |        |  |  +--| (66)
+|                         |        |  |     |  +**S.cal.RU.2
+|                         |        |  |     +--| (88)
+|                         |        |  |        +**S.cal.RU.3
+|                         |        +**| (21)
+|                         |           +--S.cal.RU.7
+|                      +--| (92)
+|                      |  +--S.cal.RU.13
+|        +-------------| (99)
+|        |             +**S.cal.RU.11
+|     +--| (75)
+|     |  |                    +**S.edw.NY.1
+|     |  |                 +**| (85)
+|     |  |                 |  +**S.edw.NY.2
+|     |  |              +--| (100)
+|     |  |              |  +--S.edw.NY.4
+|     |  |           +--| (99)
+|     |  |           |  +**S.edw.WI.7
+|     |  |        +**| (71)
+|     |  |        |  +--S.edw.WI.4
+|     |  |     +--| (72)
+|     |  |     |  +--S.edw.WI.1
+|     |  |  +**| (56)
+|     |  |  |  |  +**S.edw.WI.2
+|     |  |  |  +--| (96)
+|     |  |  |     +**S.edw.WI.3
+|     |  +--| (99)
+|     |     +--S.edw.WI.6
+|  +--| (82)
+|  |  |                   +**S.edw.RU.7
+|  |  |                +--| (98)
+|  |  |                |  +--S.edw.RU.8
+|  |  |             +--| (63)
+|  |  |             |  +**S.edw.RU.9
+|  |  |          +--| (56)
+|  |  |          |  +--S.edw.RU.1
+|  |  |       +**| (39)
+|  |  |       |  |  +**S.edw.RU.2
+|  |  |       |  +**| (81)
+|  |  |       |     +**S.edw.RU.5
+|  |  |    +--| (47)
+|  |  |    |  +--S.edw.RU.3
+|  |  +----| (99)
+|  |       +**S.edw.RU.4
++**| (38)
+|  |  +--S.sis.LM.4
+|  +**| (69)
+|     +**S.sis.LM.1
+|
+|  +--S.sis.LM.2
++--| (82)
+   +**S.sis.LM.3
+
+Tree in newick format:
+
+(Achtheres.pimelodi.NY.1:1.1296570386,(((((((S.cal.RU.8:0.0082558090,S.cal.RU.12:0.0032535980)36:0.0000025562,(((S.cal.RU.14:0.0000010000,S.cal.RU.15:0.0000010000)100:0.0099760392,(S.cal.RU.9:0.0032144841,(S.cal.OR.1:0.0000026135,(S.cal.NY.1:0.0017300911,((((S.cal.NY.4:0.0020499681,S.cal.NY.3:0.0000010000)40:0.0000029986,S.cal.NY.5:0.0000010000)78:0.0062101594,S.cal.NY.2:0.0000010000)60:0.0000029697,(S.cal.NY.7:0.0000010000,S.cal.NY.6:0.0000010000)63:0.0000022056)95:0.0041745192)87:0.0020527152)85:0.0020519513)85:0.0032845890)48:0.0000020962,((S.cal.RU.10:0.0066131137,(S.cal.RU.4:0.0049051823,S.cal.RU.5:0.0016262415)93:0.0016533222)91:0.0016090708,((S.cal.RU.6:0.0015389372,(S.cal.RU.1:0.0000020359,(S.cal.RU.2:0.0000010000,S.cal.RU.3:0.0000010000)88:0.0032317366)66:0.0049179240)78:0.0049684503,S.cal.RU.7:0.0016110381)21:0.0000022803)57:0.0016113813)75:0.0016134343)92:0.0048784194,S.cal.RU.13:0.0099298599)92:0.0016665797,S.cal.RU.11:0.0000025909)99:0.2687978528,(((((((S.edw.NY.1:0.0000010000,S.edw.NY.2:0.0000010000)85:0.0000010000,S.edw.NY.4:0.0015632492)100:0.0128954717,S.edw.WI.7:0.0000024548)99:0.0015588690,S.edw.WI.4:0.0031274748)71:0.0000025296,S.edw.WI.1:0.0047153684)72:0.0015673980,(S.edw.WI.2:0.0000010000,S.edw.WI.3:0.0000010000)96:0.0015543486)56:0.0000026835,S.edw.WI.6:0.0031328703)99:0.0604094295)75:0.0183884880,((((((S.edw.RU.7:0.0011578179,S.edw.RU.8:0.0049528017)98:0.0239708718,S.edw.RU.9:0.0008506766)63:0.0069899776,S.edw.RU.1:0.0015292011)56:0.0015504750,(S.edw.RU.2:0.0000010000,S.edw.RU.5:0.0000010000)81:0.0000010000)39:0.0000010000,S.edw.RU.3:0.0015328091)47:0.0015328466,S.edw.RU.4:0.0000025149)99:0.0966796313)82:0.0623463092,(S.sis.LM.4:0.0016024004,S.sis.LM.1:0.0000010000)69:0.0000025998)38:0.0000025431,(S.sis.LM.2:0.0048513004,S.sis.LM.3:0.0000027463)82:0.0015947601);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 2000 bootstrap trees
+Log-likelihood of consensus tree: -2681.446271
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++-----------------------------------------------------------Achtheres.pimelodi.NY.1
+|
+|                               +--S.cal.RU.8
+|                            +--| (38)
+|                            |  |                       +**S.cal.RU.14
+|                            |  |                    +**|
+|                            |  |                    |  +**S.cal.RU.18
+|                            |  |                 +**|
+|                            |  |                 |  +**S.cal.RU.16
+|                            |  |              +**|
+|                            |  |              |  +**S.cal.RU.19
+|                            |  |           +**|
+|                            |  |           |  +**S.cal.RU.20
+|                            |  |        +--|
+|                            |  |        |  +**S.cal.RU.17
+|                            |  |     +--| (100)
+|                            |  |     |  +--S.cal.RU.15
+|                            |  |  +--| (48)
+|                            |  |  |  |  +--S.cal.RU.9
+|                            |  |  |  +--| (85)
+|                            |  |  |     |  +--S.cal.OR.1
+|                            |  |  |     +--| (85)
+|                            |  |  |        |  +--S.cal.NY.1
+|                            |  |  |        +--| (87)
+|                            |  |  |           |           +--S.cal.NY.4
+|                            |  |  |           |        +--| (55)
+|                            |  |  |           |        |  +--S.cal.NY.5
+|                            |  |  |           |     +--| (78)
+|                            |  |  |           |     |  +--S.cal.NY.3
+|                            |  |  |           |  +--| (60)
+|                            |  |  |           |  |  +--S.cal.NY.2
+|                            |  |  |           +--| (95)
+|                            |  |  |              |  +--S.cal.NY.7
+|                            |  |  |              +--| (63)
+|                            |  |  |                 +--S.cal.NY.6
+|                            |  +--| (75)
+|                            |     |        +--S.cal.RU.10
+|                            |     |     +--| (91)
+|                            |     |     |  |  +--S.cal.RU.4
+|                            |     |     |  +--| (93)
+|                            |     |     |     +--S.cal.RU.5
+|                            |     |  +--| (53)
+|                            |     |  |  +--S.cal.RU.7
+|                            |     +--| (57)
+|                            |        |  +--S.cal.RU.6
+|                            |        +--| (78)
+|                            |           |  +--S.cal.RU.1
+|                            |           +--| (66)
+|                            |              |  +--S.cal.RU.2
+|                            |              +--| (88)
+|                            |                 +--S.cal.RU.3
+|                         +--| (92)
+|                         |  +--S.cal.RU.12
+|                      +--| (92)
+|                      |  +--S.cal.RU.13
+|        +-------------| (99)
+|        |             +--S.cal.RU.11
+|     +--| (75)
+|     |  |                          +**S.edw.NY.1
+|     |  |                       +**|
+|     |  |                       |  +**S.edw.NY.3
+|     |  |                    +--|
+|     |  |                    |  +**S.edw.NY.5
+|     |  |                 +--| (85)
+|     |  |                 |  +--S.edw.NY.2
+|     |  |              +--| (100)
+|     |  |              |  +--S.edw.NY.4
+|     |  |           +--| (99)
+|     |  |           |  +--S.edw.WI.7
+|     |  |        +--| (71)
+|     |  |        |  +--S.edw.WI.4
+|     |  |     +--| (72)
+|     |  |     |  +--S.edw.WI.1
+|     |  |  +--| (56)
+|     |  |  |  |     +**S.edw.WI.2
+|     |  |  |  |  +--|
+|     |  |  |  |  |  +**S.edw.WI.5
+|     |  |  |  +--| (96)
+|     |  |  |     +--S.edw.WI.3
+|     |  +--| (99)
+|     |     +--S.edw.WI.6
+|  +--| (82)
+|  |  |                   +--S.edw.RU.7
+|  |  |                +--| (98)
+|  |  |                |  +--S.edw.RU.8
+|  |  |             +--| (63)
+|  |  |             |  +--S.edw.RU.9
+|  |  |          +--| (56)
+|  |  |          |  +--S.edw.RU.1
+|  |  |       +--| (39)
+|  |  |       |  |     +**S.edw.RU.2
+|  |  |       |  |  +--|
+|  |  |       |  |  |  +**S.edw.RU.6
+|  |  |       |  +--| (81)
+|  |  |       |     +--S.edw.RU.5
+|  |  |    +--| (47)
+|  |  |    |  +--S.edw.RU.3
+|  |  +----| (99)
+|  |       +--S.edw.RU.4
++--| (38)
+|  |  +--S.sis.LM.4
+|  +--| (69)
+|     +--S.sis.LM.1
+|
+|  +--S.sis.LM.2
++--| (82)
+   +--S.sis.LM.3
+
+
+Consensus tree in newick format: 
+
+(Achtheres.pimelodi.NY.1:1.1297102552,(((((((S.cal.RU.8:0.0082562753,((((((((S.cal.RU.14:0.0000000000,S.cal.RU.18:0.0000000000):0.0000000000,S.cal.RU.16:0.0000000000):0.0000000000,S.cal.RU.19:0.0000000000):0.0000000000,S.cal.RU.20:0.0000000000):0.0000000000,S.cal.RU.17:0.0000000000):0.0000024696,S.cal.RU.15:0.0000024696)100:0.0099771151,(S.cal.RU.9:0.0032154417,(S.cal.OR.1:0.0000024696,(S.cal.NY.1:0.0017299520,((((S.cal.NY.4:0.0020534300,S.cal.NY.5:0.0000024810)55:0.0006266041,S.cal.NY.3:0.0000024696)78:0.0055713874,S.cal.NY.2:0.0000024696)60:0.0000024810,(S.cal.NY.7:0.0000024696,S.cal.NY.6:0.0000024696)63:0.0000024696)95:0.0041745037)87:0.0020524536)85:0.0020516896)85:0.0032855391)48:0.0000024696,(((S.cal.RU.10:0.0066139439,(S.cal.RU.4:0.0049062390,S.cal.RU.5:0.0016260774)93:0.0016530835)91:0.0016085819,S.cal.RU.7:0.0016108790)53:0.0000024696,(S.cal.RU.6:0.0015385676,(S.cal.RU.1:0.0000024810,(S.cal.RU.2:0.0000024696,S.cal.RU.3:0.0000024696)88:0.0032322814)66:0.0049189522)78:0.0049688403)57:0.0016111969)75:0.0016131002)38:0.0000024696,S.cal.RU.12:0.0032541490)92:0.0048779377,S.cal.RU.13:0.0099309486)92:0.0016662834,S.cal.RU.11:0.0000024810)99:0.2688096882,(((((((((S.edw.NY.1:0.0000000000,S.edw.NY.3:0.0000000000):0.0000000000,S.edw.NY.5:0.0000000000):0.0000024696,S.edw.NY.2:0.0000024696)85:0.0000024696,S.edw.NY.4:0.0015627051)100:0.0128961885,S.edw.WI.7:0.0000024696)99:0.0015584320,S.edw.WI.4:0.0031280409)71:0.0000024696,S.edw.WI.1:0.0047150839)72:0.0015669949,((S.edw.WI.2:0.0000000000,S.edw.WI.5:0.0000000000):0.0000024696,S.edw.WI.3:0.0000024696)96:0.0015546396)56:0.0000029982,S.edw.WI.6:0.0031328219)99:0.0603811364)75:0.0183995577,((((((S.edw.RU.7:0.0011587879,S.edw.RU.8:0.0049528623)98:0.0239707923,S.edw.RU.9:0.0008523333)63:0.0069888259,S.edw.RU.1:0.0015295447)56:0.0015501257,((S.edw.RU.2:0.0000000000,S.edw.RU.6:0.0000000000):0.0000024696,S.edw.RU.5:0.0000024696)81:0.0000024696)39:0.0000024696,S.edw.RU.3:0.0015326111)47:0.0015326039,S.edw.RU.4:0.0000024696)99:0.0966824104)82:0.0623560811,(S.sis.LM.4:0.0016017512,S.sis.LM.1:0.0000024696)69:0.0000025337)38:0.0000024696,(S.sis.LM.2:0.0048509972,S.sis.LM.3:0.0000024696)82:0.0015942916);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t Salmincola_COI_CleanIDs_AlignedMuscle.fasta.treefile -m "HKY{12.201}+F{0.283606,0.156855,0.183054,0.376485}+G4{0.163741}" --length 669
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s Salmincola_COI_CleanIDs_AlignedMuscle.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s Salmincola_COI_CleanIDs_AlignedMuscle.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Wed May  7 21:48:35 2025
+Total CPU time used: 9.800282 seconds (0h:0m:9s)
+Total wall-clock time used: 10.25412198 seconds (0h:0m:10s)
+
